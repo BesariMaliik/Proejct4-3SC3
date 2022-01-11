@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<HTML><TITLE>Puchase Tickets</TITLE>
+<HEAD>
+<LINK type="text/css" rel="stylesheet" href="ExternalStylesheet/DAMAFAsheet.css" />
+<SCRIPT type="text/javascript" src="Function.js"></SCRIPT>
+
+<STYLE type="text/css">
+*{
+ font-family: "arial";
+}
+input[type='submit']{
+ margin-bottom: 20px;
+ background-color: black;
+ border:none;
+ padding: 10px;
+ color: white;
+ border-radius: 3px;
+}
+input[type='reset']{
+ margin-bottom: 20px;
+ background-color: black;
+ border:none;
+ padding: 10px;
+ color: white;
+ border-radius: 3px;
+}
+th{
+font-size:20px;
+background-color:green;
+}
+td{
+text-align:left;
+font-size:20px;
+}
+h4{
+ padding: 10px;
+ text-align: center;
+ color: white;
+ background-color: red;
+ margin-bottom: 10px;
+ border-radius: 7px;
+ width: 102%;
+ margin-left: -10px;
+}
+form{
+ margin: 50px auto;
+ width: 500px;
+ background: gray;
+ border-radius: 5px;
+}
+ h2{
+background-color:red;
+border:1px solid red;
+}
+.auto-style{
+/* Chrome  */
+overflow-x:-webkit-marquee;
+-webkit-marquee-direction: up;
+-webkit-marquee-style: scroll;
+-webkit-marquee-speed:normal;
+-webkit-marquee-increment: small;
+-webkit-marquee-repetition: infinite;
+}
+</STYLE>
+
+</HEAD>
+<BODY>
+<DIV id="mainDivContainer" style="position: relative; width: 100%; margin-top: 0px; margin-bottom: 0px;">
+
+        <DIV style="width: 960px;  margin-top: 5px; margin-left: auto; margin-right:auto">
+
+                    <DIV style="width: 960px; height:80px;">
+
+                   		 <IMG id="logo" src="images\Logo.png" width="500" height="100">
+
+                   			
+                    
+		 
+			</DIV>
+
+
+                    <DIV style="width:500px; height:20px; float:left; text-align:center;">
+                    <SPAN class="auto-style1"><B> Enjoy your life with music </B></SPAN>
+
+		                </DIV>
+     
+            <DIV id="topnav" style="float:left;width: 960px; height: 20px; word-spacing: 5px; font-size: 90%; padding-left:60px; padding-top: 6px; white-space: nowrap; text-align:left; background-color: black;">
+                    <NAV>
+						<A href="home.html">|	Home	|</A> |
+                        <A href="Upcoming Music.html">|		Upcoming Music	 |</A> |
+						<A href="Purchase Tickets.html">|		Purchase Tickets	|</A> |
+						<A href="about us.html">|	About Us	|</A>
+						
+                  </NAV>
+   
+           </DIV>
+
+            <DIV style="width: 960px; height: auto; position: relative; margin:0px; padding: 29px; overflow: hidden; background-color: white; align : center; ">
+<FORM name="form1" onsubmit="return validate();">
+<TABLE>
+<TR>
+<h4>PURCHASE YOUR ONLINE TICKETS</h4>
+</TR>
+<TD>Name</TD>
+<TD><INPUT type="text" name="usrname" placeholder="Enter Your Name" required></TD>
+</TR>
+<TR>
+<TD>Concert Day</TD>
+<TD><SELECT id="sel">
+<OPTION value="0">Select Day</OPTION>
+<OPTION value="1">Music Day 1</OPTION>
+<OPTION value="2">Music Day 2</OPTION>
+<OPTION value="3">Music Day 3</OPTION>
+</SELECT></TD>
+</TR>
+<TR>
+<TD>Select Seat</TD>
+<TD>
+<INPUT type="Radio" name="RB" required" onclick="check();">Front</INPUT>
+<INPUT type="Radio" name="RB" required onclick="check();">Back</INPUT>
+<INPUT type="Radio" name="RB" required onclick="check();">VIP</INPUT>
+</TD>
+</TR>
+<TR>
+<TD>Price </TD>
+<TD><INPUT type="text" name="price" disabled> </TD>
+</TR>
+<TR>
+<TD>Number of Tickets</TD> 
+<TD><INPUT type="text" name="num" placeholder="Enter Tickets" required onchange="total();" onkeypress="checkNum();"> </TD>
+</TR>
+<TR>
+<TD>Total Price</TD> 
+<TD><INPUT TYPE="text" NAME="totalprice" disabled> </TD> 
+</TR>
+</TABLE>
+<center>
+<INPUT ID="submit" type="submit" onclick="sub();"></Td><Td>
+<INPUT type="reset"></center>
+</FORM>
+<H2>Fan Protection</H2>
+<DIV class="auto-style">
+<P>1. Buyers will get their tickets on time to attend the concerts</P>
+<P>2. Tickets will be valid to access the concerts</P>
+<P>3. Tickets received are the same as those that have been booked</P>
+<P>4. If some of the above doesn't happen and the buyer complies with the policies and deadlines, we'll find a comparable or better ticket to the event, or offer a refund or credit to use on a future transaction.</P>
+<P>5. If the concerts is canceled and not rescheduled, the buyer will be compensated</P>
+</DIV>
+</BODY>
+</HTML>

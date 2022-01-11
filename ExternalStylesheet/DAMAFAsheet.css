@@ -1,0 +1,134 @@
+        h3 {
+            color: red;
+            font-family: arial;
+            position: absolute;
+            right: 130px;
+            top: 320px;
+        }
+	#slideshow { 
+  		margin-left: 320px;
+  		position: relative; 
+  		width: 300px; 
+  		height: 200px; 
+  		padding: 10px; 
+  		
+	}
+	#slideshow > div { 
+  		position: absolute; 
+  		top: 10px; 
+  		left: 10px; 
+  		right: 10px; 
+  		bottom: 10px; 
+	}
+        aside p {
+            text-align: center;
+            background-color: red;
+            color: white;
+            font-size: 15px;
+        }
+
+        body {
+
+            background-color: black;
+	    background-image: url('background.jpg');
+	    background-size: cover;
+            background-repeat: repeat-x;
+        }
+
+        details {
+            color: red;
+            font-family: arial;
+            font-size: 15px;
+        }
+        h1 {
+            font-family: arial;
+            color: red;
+            font-size: 20px;
+            position: absolute;
+            top: 0px;
+            right: 50px;
+        }
+        article p {
+            color: black;
+            font-size: 15px;
+            font-family: arial;
+            width: 550px;
+        }
+
+       h5 {
+           font-family: arial;
+           color: white;
+           font-size: 16px;
+           float:right;
+        }
+	h6 {
+            font-family: arial;
+            color: black;
+            font-size: 12px;
+
+        }
+        h2 {
+            color: black;
+            font-family: arial;
+	    position: relative;
+            class="auto-style;
+        }
+        details ul {
+            color: #D51165;
+            font-size: 15px;
+       }
+        h4 {
+            color: black;
+            font-family: arial;
+        }
+        video {
+            position: absolute;
+            right: 50px;
+            top: 380px;
+        }
+        #mainDivContainer h4 {
+            color: black;
+            font-size: 24px;
+        }
+       .auto-style1 {
+            color: #FFFFFF;
+           font-style: arial;
+        }
+        #wa {
+            height: 80px;
+            width: 50px;
+            float:right;
+        }
+		#location {
+            height: 80px;
+            width: 50px;
+            float:right;
+        }
+		
+nav a:hover{ 
+color: pink; 
+} 
+nav a{
+display: inline;
+text-decoration: none;
+color:white;
+}
+@keyframes multicolor
+{
+0% {color:red;}
+40% {color:black;}
+60%{color:red;}
+80% {color:black;}
+}
+@-webkit-keyframes multicolor /* Chrome */
+{
+0% {color:red;}
+40% {color:black;}
+60%{color:red;}
+80% {color:black;}
+}
+.auto-style2{
+font-size:40px;
+animation:multicolor 5s infinite;
+-webkit-animation:multicolor 5s infinite; /*Chrome */
+}
